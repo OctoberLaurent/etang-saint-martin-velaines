@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- etang-saint-martin-velaines.be -->
+
+<!-- This project was vibe-coded for experimental purposes. -->
+<!-- To balance this approach, the entire codebase was verified -->
+<!-- and optimized by AI to ensure adherence to software development best practices -->
+<!-- and a high-performing SEO architecture. -->
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>L'Étang Saint-Martin | Le paradis des pêcheurs à Velaines</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="L'Étang Saint-Martin est un sanctuaire préservé offrant un cadre verdoyant et relaxant à Velaines (Celles). Idéal pour pêcher, se promener, boire un verre ou participer à des événements au cœur du Tournaisis." />
+    <meta name="keywords"
+        content="étang, pêche, Velaines, Celles, nature, promenade, buvette, Tournaisis, Wallonie Picarde" />
+    <meta name="author" content="L'Étang Saint-Martin" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="L'Étang Saint-Martin | Le paradis des pêcheurs à Velaines" />
+    <meta property="og:description"
+        content="Découvrez notre domaine préservé pour la pêche, la détente et la nature près de Tournai." />
+    <meta property="og:image" content="pictures/hero.jpg" />
+    <meta property="og:url" content="https://www.facebook.com/profile.php?id=100057210648975" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="theme-light">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <div class="header__logo">
+                <div class="header__icon-wrapper">
+                    <img src="pictures/icons/carp.svg" alt="Carp" class="header__icon" />
+                </div>
+                <h2 class="header__title">L'Étang Saint-Martin</h2>
+            </div>
+
+            <nav class="header__nav">
+                <a href="#home" class="header__link" data-i18n="nav-home">Accueil</a>
+                <a href="#activities" class="header__link" data-i18n="nav-activities">Activités</a>
+                <a href="#gallery" class="header__link" data-i18n="nav-gallery">Galerie</a>
+                <a href="#contact" class="header__link" data-i18n="nav-contact">Contact</a>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <span class="lang-separator">|</span>
+                    <button class="lang-btn" data-lang="nl">NL</button>
+                </div>
+
+        </div>
+        </nav>
+
+        <button class="header__menu-btn">
+            <span class="material-symbols-outlined">menu</span>
+        </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero__bg parallax"
+                style="background-image: linear-gradient(rgba(22, 28, 25, 0.5), rgba(22, 28, 25, 0.7)), url('pictures/hero.jpg');">
+            </div>
+
+            <div class="hero__content animate-fade-in">
+                <h1 class="hero__title" data-i18n="hero-title">L'Étang Saint-Martin :<br />Le paradis des pêcheurs à
+                    Velaines.
+                </h1>
+                <p class="hero__subtitle" data-i18n="hero-subtitle">Le rendez-vous des pêcheurs en Région wallonne.
+                </p>
+            </div>
+        </section>
+
+        <!-- Presentation Section -->
+        <section class="about section-padding">
+            <div class="about__container">
+                <div class="about__content animate-slide-up">
+                    <div class="tag" data-i18n="about-tag">Patrimoine Naturel</div>
+                    <h2 class="section-title" data-i18n="about-title">L'élégance naturelle aux portes de Tournai</h2>
+                    <p class="section-text" data-i18n="about-p1">
+                        L'Étang Saint-Martin est un sanctuaire préservé où le temps semble suspendu. À quelques
+                        encablures de Tournai, niché au cœur de Velaines, notre domaine offre une escale bucolique
+                        d'exception pour les passionnés de grands espaces et de sérénité.
+                    </p>
+                    <p class="section-text" data-i18n="about-p2">
+                        Pêcher, s'attabler pour un verre, savourer un repas ou vibrer lors d'événements spéciaux :
+                        chaque visite offre une symphonie naturelle et une quiétude rare, cultivée avec dévouement au
+                        gré des floraisons et des saisons.
+                    </p>
+                    <a href="#" class="link-arrow group">
+                        <span data-i18n="about-link">En savoir plus sur notre histoire</span>
+                        <span class="material-symbols-outlined link-arrow__icon">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="about__visual animate-slide-up delay-200">
+                    <div class="about__decor about__decor--top"></div>
+                    <!-- Image with subtle styling -->
+                    <img class="about__img hover-scale" src="pictures/about.png" alt="Etang scenery" loading="lazy" />
+                    <div class="about__decor about__decor--bottom"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities section-padding bg-light-alt border-y">
+            <div class="activities__container">
+                <div class="activities__header text-center animate-slide-up">
+                    <h2 class="section-title" data-i18n="activities-title">Nos activités & services</h2>
+                    <p class="section-subtitle" data-i18n="activities-subtitle">Vivez des moments suspendus dans un
+                        cadre exceptionnel dédié à la détente.</p>
+                </div>
+
+                <div class="activities__grid">
+                    <div class="activity-card group animate-slide-up delay-100">
+                        <div class="activity-card__icon-wrapper">
+                            <span class="material-symbols-outlined activity-card__icon">phishing</span>
+                        </div>
+                        <h3 class="activity-card__title" data-i18n="act-fishing-title">Pêche</h3>
+                        <p class="activity-card__desc" data-i18n="act-fishing-desc">Une expérience authentique au bord
+                            d'un étang préservé, pour les passionnés de calme et de beaux spécimens.</p>
+                    </div>
+
+                    <div class="activity-card group animate-slide-up delay-200">
+                        <div class="activity-card__icon-wrapper">
+                            <span class="material-symbols-outlined activity-card__icon">local_bar</span>
+                        </div>
+                        <h3 class="activity-card__title" data-i18n="act-drink-title">Buvette</h3>
+                        <p class="activity-card__desc" data-i18n="act-drink-desc">Un lieu convivial pour se désaltérer
+                            et partager un moment entre amis face au panorama de l'étang.</p>
+                    </div>
+
+                    <div class="activity-card group animate-slide-up delay-300">
+                        <div class="activity-card__icon-wrapper">
+                            <span class="material-symbols-outlined activity-card__icon">restaurant</span>
+                        </div>
+                        <h3 class="activity-card__title" data-i18n="act-food-title">Restauration</h3>
+                        <p class="activity-card__desc" data-i18n="act-food-desc">Dégustez nos spécialités locales et nos
+                            formules comme l'Américaine - Koppel dans une ambiance champêtre.</p>
+                    </div>
+
+                    <div class="activity-card group animate-slide-up delay-400">
+                        <div class="activity-card__icon-wrapper">
+                            <span class="material-symbols-outlined activity-card__icon">event</span>
+                        </div>
+                        <h3 class="activity-card__title" data-i18n="act-events-title">Événements</h3>
+                        <p class="activity-card__desc" data-i18n="act-events-desc">Concours de pêche, journées à thèmes
+                            et rassemblements associatifs tout au long de la saison.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Banner -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="gallery__container">
+                <div class="gallery__item animate-fade-in delay-100">
+                    <img class="gallery__img hover-scale" src="pictures/gallery_1.png" alt="Forest path"
+                        loading="lazy" />
+                </div>
+                <div class="gallery__item animate-fade-in delay-200">
+                    <img class="gallery__img hover-scale" src="pictures/gallery_2.png" alt="Water reflection"
+                        loading="lazy" />
+                </div>
+                <div class="gallery__item animate-fade-in delay-300">
+                    <img class="gallery__img hover-scale" src="pictures/gallery_3.png" alt="Food" loading="lazy" />
+                </div>
+                <div class="gallery__item animate-fade-in delay-400">
+                    <img class="gallery__img hover-scale" src="pictures/gallery_4.png" alt="Snow" loading="lazy" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer__container grid--4-cols">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <img src="pictures/icons/carp.svg" alt="Carp" class="footer__logo-icon" />
+                    <h2 class="footer__logo-title">L'Étang Saint-Martin</h2>
+                </div>
+                <p class="footer__desc" data-i18n="footer-desc">
+                    L'étang Saint-Martin est un paisible plan d'eau situé à Velaines, dans l'entité de Celles
+                    (Belgique). Prisé des pêcheurs et promeneurs, ce site naturel offre un cadre verdoyant et relaxant,
+                    idéal pour se ressourcer au cœur du Tournaisis.
+                </p>
+                <div class="footer__socials">
+                    <a href="https://www.facebook.com/profile.php?id=100057210648975" target="_blank"
+                        rel="noopener noreferrer" class="social-link" title="Facebook">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 16.9913 5.65684 21.1283 10.4375 21.8785V14.8906H7.89844V12H10.4375V9.79688C10.4375 7.29063 11.9305 5.90625 14.2148 5.90625C15.3086 5.90625 16.4531 6.10156 16.4531 6.10156V8.5625H15.1922C13.95 8.5625 13.5625 9.33333 13.5625 10.1241V12H16.3359L15.8926 14.8906H13.5625V21.8785C18.3432 21.1283 22 16.9913 22 12Z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title" data-i18n="footer-contact-title">Contact</h4>
+                <ul class="footer__list">
+                    <li class="footer__list-item border-none">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <span>Bas Hameau, 7760 Velaines<br />Belgique</span>
+                    </li>
+                    <li class="footer__list-item">
+                        <span class="material-symbols-outlined">call</span>
+                        <span>+32 (0) 69 00 00 00</span>
+                    </li>
+                    <li class="footer__list-item flex-wrap">
+                        <span class="material-symbols-outlined">mail</span>
+                        <span>contact@etang-saintmartin.be</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title" data-i18n="footer-hours-title">Horaires d'ouverture</h4>
+                <ul class="footer__list">
+                    <li class="footer__list-item justify-between">
+                        <span data-i18n="hours-mon-fri">Lundi - Vendredi</span>
+                        <span>08:00 - 18:00</span>
+                    </li>
+                    <li class="footer__list-item justify-between">
+                        <span data-i18n="hours-sat">Samedi</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="footer__list-item justify-between">
+                        <span data-i18n="hours-sun">Dimanche</span>
+                        <span>07:00 - 19:00</span>
+                    </li>
+                    <li class="footer__list-item--small" data-i18n="hours-closed">Fermé les jours fériés</li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title" data-i18n="footer-location">Localisation</h4>
+                <a href="https://www.google.com/maps/search/?api=1&query=50.657608854340886,3.4868372921881914"
+                    target="_blank" rel="noopener noreferrer" class="footer__map">
+                    <img src="pictures/map.png" alt="Map" data-i18n-alt="footer-map-alt" loading="lazy" />
+                </a>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p data-i18n="footer-rights">© 2026 L'Étang Saint-Martin. Tous droits réservés.</p>
+            <p data-i18n="footer-center">Développé avec ❤️ par <a href="https://www.lepl.at" target="_blank"
+                    rel="noopener noreferrer">Laurent LEPLAT</a></p>
+            <div class="footer__links">
+                <a href="#" class="footer__link" data-modal-target="modal-legal" data-i18n="footer-legal">Mentions
+                    Légales</a>
+                <a href="#" class="footer__link" data-modal-target="modal-privacy" data-i18n="footer-privacy">Politique
+                    de Confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- App Scripts -->
+    <script type="module" src="js/app.js"></script>
+
+    <!-- Legal Modal -->
+    <div id="modal-legal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="section-title" data-i18n="modal-legal-title">Mentions Légales</h2>
+            <div class="modal__body" data-i18n="modal-legal-body"></div>
+        </div>
+    </div>
+
+    <!-- Privacy Modal -->
+    <div id="modal-privacy" class="modal">
+        <div class="modal__content">
+            <button class="modal__close">&times;</button>
+            <h2 class="section-title" data-i18n="modal-privacy-title">Politique de Confidentialité</h2>
+            <div class="modal__body" data-i18n="modal-privacy-body"></div>
+        </div>
+    </div>
+</body>
+
+</html>
