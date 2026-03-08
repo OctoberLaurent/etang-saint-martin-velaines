@@ -768,6 +768,11 @@ img {
         border-bottom: 1px solid var(--color-primary-light);
         box-shadow: var(--shadow-xl);
     }
+
+    .hero__bg {
+        /* Fixes iOS Safari bug where 'background-attachment: fixed' breaks the image */
+        background-attachment: scroll;
+    }
 }
 
 /* === Modals === */
