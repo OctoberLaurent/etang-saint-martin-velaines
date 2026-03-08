@@ -1,6 +1,8 @@
 const translations = {
     fr: {
         "nav-home": "Accueil",
+        "hero-title": "L'Étang Saint-Martin :<br />Le paradis des pêcheurs à Velaines.",
+        "hero-subtitle": "Le rendez-vous des pêcheurs en Région wallonne.",
         "nav-activities": "Activités",
         "nav-gallery": "Galerie",
         "nav-contact": "Contact",
@@ -54,6 +56,8 @@ const translations = {
     },
     nl: {
         "nav-home": "Home",
+        "hero-title": "L'Étang Saint-Martin :<br />Het vissersparadijs in Velaines.",
+        "hero-subtitle": "De ontmoetingsplaats voor vissers in het Waals Gewest.",
         "nav-activities": "Activiteiten",
         "nav-gallery": "Galerij",
         "nav-contact": "Contact",
