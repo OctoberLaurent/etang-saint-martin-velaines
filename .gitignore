@@ -4,3 +4,4 @@ package-lock.json
 eslint.config.js
 favicon_io.zip
 *.log
+dist/
