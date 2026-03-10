@@ -56,7 +56,7 @@ const translations = {
     },
     nl: {
         "nav-home": "Home",
-        "hero-title": "L'Étang Saint-Martin :<br />Het vissersparadijs in Velaines.",
+        "hero-title": "De Sint-Maartensvijver :<br />Het vissersparadijs in Velaines.",
         "hero-subtitle": "De ontmoetingsplaats voor vissers in het Waals Gewest.",
         "nav-activities": "Activiteiten",
         "nav-gallery": "Galerij",
@@ -87,7 +87,7 @@ const translations = {
         "footer-map-alt": "Kaart met de locatie van Velaines",
         "footer-legal": "Wettelijke Vermeldingen",
         "footer-privacy": "Privacybeleid",
-        "footer-rights": `© ${new Date().getFullYear()} L'Étang Saint-Martin. Alle rechten voorbehouden.`,
+        "footer-rights": `© ${new Date().getFullYear()} De Sint-Maartensvijver. Alle rechten voorbehouden.`,
         "footer-center": "Ontwikkeld met ❤️ door <a href=\"https://www.lepl.at\" target=\"_blank\" rel=\"noopener noreferrer\">Laurent LEPLAT</a>",
         "modal-legal-title": "Wettelijke Vermeldingen",
         "modal-legal-body": `
