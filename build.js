@@ -21,7 +21,8 @@ async function build() {
             'favicon-16x16.png',
             'favicon-32x32.png',
             'favicon.ico',
-            'site.webmanifest'
+            'site.webmanifest',
+            'CNAME'
         ];
 
         for (const item of itemsToCopy) {
