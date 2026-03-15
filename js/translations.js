@@ -25,8 +25,7 @@ const translations = {
         "footer-contact-title": "Contact",
         "footer-hours-title": "Horaires d'ouverture",
         "hours-mon-fri": "Lundi - Vendredi",
-        "hours-sat": "Samedi",
-        "hours-sun": "Dimanche",
+        "hours-sat-sun": "Samedi - Dimanche",
         "footer-location": "Localisation",
         "footer-map-alt": "Carte indiquant l'emplacement de Velaines",
         "footer-legal": "Mentions Légales",
@@ -34,6 +33,8 @@ const translations = {
         "footer-rights": `© ${new Date().getFullYear()} L'Étang Saint-Martin. Tous droits réservés.`,
         "footer-center": "Développé avec ❤️ par <a href=\"https://www.lepl.at\" target=\"_blank\" rel=\"noopener noreferrer\">Laurent LEPLAT</a>",
         "modal-legal-title": "Mentions Légales",
+        "modal-legal-badge": "Document officiel",
+        "modal-legal-updated": "Dernière mise à jour : janvier 2026",
         "modal-legal-body": `
             <h3>Éditeur du site</h3>
             <p>Le présent site est édité par <strong><span data-sensitive="owner-name"></span></strong>, domiciliée au <strong><span data-sensitive="owner-address"></span></strong>.</p>
@@ -46,6 +47,8 @@ const translations = {
             <p>Le site est hébergé par <strong>GitHub, Inc.</strong> (service GitHub Pages), situé au <strong>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</strong>.</p>
         `,
         "modal-privacy-title": "Politique de Confidentialité",
+        "modal-privacy-badge": "Protection des données",
+        "modal-privacy-updated": "Dernière mise à jour : janvier 2026",
         "modal-privacy-body": `
             <h3>Collecte des données</h3>
             <p>Les données à caractère personnel collectées sur ce site sont uniquement à <strong>but technique</strong> (journaux de serveur, cookies de session nécessaires au bon fonctionnement du site). Aucune donnée personnelle n'est collectée à des fins commerciales ou publicitaires.</p>
@@ -80,8 +83,7 @@ const translations = {
         "footer-contact-title": "Contact",
         "footer-hours-title": "Openingstijden",
         "hours-mon-fri": "Maandag - Vrijdag",
-        "hours-sat": "Zaterdag",
-        "hours-sun": "Zondag",
+        "hours-sat-sun": "Zaterdag - Zondag",
         "footer-location": "Locatie",
         "footer-map-alt": "Kaart met de locatie van Velaines",
         "footer-legal": "Wettelijke Vermeldingen",
@@ -89,6 +91,8 @@ const translations = {
         "footer-rights": `© ${new Date().getFullYear()} De Sint-Maartensvijver. Alle rechten voorbehouden.`,
         "footer-center": "Ontwikkeld met ❤️ door <a href=\"https://www.lepl.at\" target=\"_blank\" rel=\"noopener noreferrer\">Laurent LEPLAT</a>",
         "modal-legal-title": "Wettelijke Vermeldingen",
+        "modal-legal-badge": "Officieel document",
+        "modal-legal-updated": "Laatste update: januari 2026",
         "modal-legal-body": `
             <h3>Uitgever van de site</h3>
             <p>Deze site wordt uitgegeven door <strong><span data-sensitive="owner-name"></span></strong>, gevestigd te <strong><span data-sensitive="owner-address"></span></strong>.</p>
@@ -101,6 +105,8 @@ const translations = {
             <p>De site wordt gehost door <strong>GitHub, Inc.</strong> (GitHub Pages), gevestigd te <strong>88 Colin P Kelly Jr St, San Francisco, CA 94107, Verenigde Staten</strong>.</p>
         `,
         "modal-privacy-title": "Privacybeleid",
+        "modal-privacy-badge": "Gegevensbescherming",
+        "modal-privacy-updated": "Laatste update: januari 2026",
         "modal-privacy-body": `
             <h3>Gegevensverzameling</h3>
             <p>De persoonlijke gegevens die op deze site worden verzameld, zijn uitsluitend voor <strong>technische doeleinden</strong> (serverlogboeken, sessiecookies die noodzakelijk zijn voor het goede functioneren van de site). Er worden geen persoonsgegevens verzameld voor commerciële of reclamedoeleinden.</p>

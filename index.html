@@ -235,15 +235,11 @@
                 <ul class="footer__list">
                     <li class="footer__list-item justify-between">
                         <span data-i18n="hours-mon-fri">Lundi - Vendredi</span>
-                        <span>08:00 - 18:00</span>
+                        <span>17:00 - 20:00</span>
                     </li>
                     <li class="footer__list-item justify-between">
-                        <span data-i18n="hours-sat">Samedi</span>
-                        <span>07:00 - 19:00</span>
-                    </li>
-                    <li class="footer__list-item justify-between">
-                        <span data-i18n="hours-sun">Dimanche</span>
-                        <span>07:00 - 19:00</span>
+                        <span data-i18n="hours-sat-sun">Samedi - Dimanche</span>
+                        <span>07:30 - 20:00</span>
                     </li>
                 </ul>
             </div>
@@ -276,18 +272,48 @@
     <!-- Legal Modal -->
     <div id="modal-legal" class="modal">
         <div class="modal__content">
-            <button class="modal__close">&times;</button>
-            <h2 class="section-title" data-i18n="modal-legal-title">Mentions Légales</h2>
-            <div class="modal__body" data-i18n="modal-legal-body"></div>
+            <!-- Header -->
+            <div class="modal__header">
+                <div class="modal__header-accent"></div>
+                <div class="modal__badge">
+                    <span class="material-symbols-outlined">gavel</span>
+                    <span data-i18n="modal-legal-badge">Document officiel</span>
+                </div>
+                <h2 class="modal__title" data-i18n="modal-legal-title">Mentions Légales</h2>
+                <button class="modal__close" aria-label="Fermer">&times;</button>
+            </div>
+            <!-- Body -->
+            <div class="modal__body">
+                <div data-i18n="modal-legal-body"></div>
+                <div class="modal__footer-strip">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span data-i18n="modal-legal-updated">Dernière mise à jour : janvier 2026</span>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- Privacy Modal -->
     <div id="modal-privacy" class="modal">
         <div class="modal__content">
-            <button class="modal__close">&times;</button>
-            <h2 class="section-title" data-i18n="modal-privacy-title">Politique de Confidentialité</h2>
-            <div class="modal__body" data-i18n="modal-privacy-body"></div>
+            <!-- Header -->
+            <div class="modal__header">
+                <div class="modal__header-accent"></div>
+                <div class="modal__badge">
+                    <span class="material-symbols-outlined">shield</span>
+                    <span data-i18n="modal-privacy-badge">Protection des données</span>
+                </div>
+                <h2 class="modal__title" data-i18n="modal-privacy-title">Politique de Confidentialité</h2>
+                <button class="modal__close" aria-label="Fermer">&times;</button>
+            </div>
+            <!-- Body -->
+            <div class="modal__body">
+                <div data-i18n="modal-privacy-body"></div>
+                <div class="modal__footer-strip">
+                    <span class="material-symbols-outlined">verified</span>
+                    <span data-i18n="modal-privacy-updated">Dernière mise à jour : janvier 2026</span>
+                </div>
+            </div>
         </div>
     </div>
 </body>
