@@ -27,7 +27,6 @@ const translations = {
         "hours-mon-fri": "Lundi - Vendredi",
         "hours-sat": "Samedi",
         "hours-sun": "Dimanche",
-        "hours-closed": "Fermé les jours fériés",
         "footer-location": "Localisation",
         "footer-map-alt": "Carte indiquant l'emplacement de Velaines",
         "footer-legal": "Mentions Légales",
@@ -37,21 +36,22 @@ const translations = {
         "modal-legal-title": "Mentions Légales",
         "modal-legal-body": `
             <h3>Éditeur du site</h3>
-            <p>Le présent site est édité par <span class="text-placeholder">[Nom / Raison sociale]</span>, domicilié(e) au <span class="text-placeholder">[Adresse complète]</span>.</p>
-            <p>Téléphone : <span class="text-placeholder">[Numéro de téléphone]</span></p>
-            <p>Email : <span class="text-placeholder">[Adresse email]</span></p>
-            <p>Directeur de la publication : <span class="text-placeholder">[Nom du directeur]</span></p>
-            
+            <p>Le présent site est édité par <strong><span data-sensitive="owner-name"></span></strong>, domiciliée au <strong><span data-sensitive="owner-address"></span></strong>.</p>
+            <p>Numéro de TVA : <strong><span data-sensitive="owner-tva"></span></strong></p>
+            <p>Téléphone : <strong><a data-sensitive-tel="owner-phone-legal"></a></strong></p>
+            <p>Email : <strong><a data-sensitive-email="owner-email"></a></strong></p>
+            <p>Directeur de la publication : <strong><span data-sensitive="owner-name"></span></strong></p>
+
             <h3>Hébergement</h3>
-            <p>Le site est hébergé par <span class="text-placeholder">[Nom de l'hébergeur]</span>, situé au <span class="text-placeholder">[Adresse de l'hébergeur]</span>.</p>
+            <p>Le site est hébergé par <strong>GitHub, Inc.</strong> (service GitHub Pages), situé au <strong>88 Colin P Kelly Jr St, San Francisco, CA 94107, États-Unis</strong>.</p>
         `,
         "modal-privacy-title": "Politique de Confidentialité",
         "modal-privacy-body": `
             <h3>Collecte des données</h3>
-            <p>Les données à caractère personnel collectées sur ce site sont uniquement réservées à <span class="text-placeholder">[Finalité de la collecte, par exemple : la gestion des réservations, prises de contact]</span>.</p>
-            
+            <p>Les données à caractère personnel collectées sur ce site sont uniquement à <strong>but technique</strong> (journaux de serveur, cookies de session nécessaires au bon fonctionnement du site). Aucune donnée personnelle n'est collectée à des fins commerciales ou publicitaires.</p>
+
             <h3>Droits de l'utilisateur</h3>
-            <p>Conformément aux lois en vigueur, vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Vous pouvez exercer ce droit en nous contactant à <span class="text-placeholder">[Adresse email de contact]</span>.</p>
+            <p>Conformément aux lois en vigueur, vous disposez d'un droit d'accès, de rectification et d'effacement de vos données. Vous pouvez exercer ce droit en nous contactant à <strong><a data-sensitive-email="owner-email"></a></strong>.</p>
         `
     },
     nl: {
@@ -82,7 +82,6 @@ const translations = {
         "hours-mon-fri": "Maandag - Vrijdag",
         "hours-sat": "Zaterdag",
         "hours-sun": "Zondag",
-        "hours-closed": "Gesloten op feestdagen",
         "footer-location": "Locatie",
         "footer-map-alt": "Kaart met de locatie van Velaines",
         "footer-legal": "Wettelijke Vermeldingen",
@@ -92,23 +91,51 @@ const translations = {
         "modal-legal-title": "Wettelijke Vermeldingen",
         "modal-legal-body": `
             <h3>Uitgever van de site</h3>
-            <p>Deze site wordt uitgegeven door <span class="text-placeholder">[Naam / Bedrijfsnaam]</span>, gevestigd te <span class="text-placeholder">[Volledig adres]</span>.</p>
-            <p>Telefoon : <span class="text-placeholder">[Telefoonnummer]</span></p>
-            <p>E-mail : <span class="text-placeholder">[E-mailadres]</span></p>
-            <p>Directeur van de publicatie : <span class="text-placeholder">[Naam van de directeur]</span></p>
-            
+            <p>Deze site wordt uitgegeven door <strong><span data-sensitive="owner-name"></span></strong>, gevestigd te <strong><span data-sensitive="owner-address"></span></strong>.</p>
+            <p>BTW-nummer : <strong><span data-sensitive="owner-tva"></span></strong></p>
+            <p>Telefoon : <strong><a data-sensitive-tel="owner-phone-legal"></a></strong></p>
+            <p>E-mail : <strong><a data-sensitive-email="owner-email"></a></strong></p>
+            <p>Directeur van de publicatie : <strong><span data-sensitive="owner-name"></span></strong></p>
+
             <h3>Hosting</h3>
-            <p>De site wordt gehost door <span class="text-placeholder">[Naam van de host]</span>, gevestigd te <span class="text-placeholder">[Adres van de host]</span>.</p>
+            <p>De site wordt gehost door <strong>GitHub, Inc.</strong> (GitHub Pages), gevestigd te <strong>88 Colin P Kelly Jr St, San Francisco, CA 94107, Verenigde Staten</strong>.</p>
         `,
         "modal-privacy-title": "Privacybeleid",
         "modal-privacy-body": `
             <h3>Gegevensverzameling</h3>
-            <p>De persoonlijke gegevens die op deze site worden verzameld, zijn uitsluitend bestemd voor <span class="text-placeholder">[Doel van de verzameling, bijvoorbeeld: beheer van reserveringen, contactopname]</span>.</p>
-            
+            <p>De persoonlijke gegevens die op deze site worden verzameld, zijn uitsluitend voor <strong>technische doeleinden</strong> (serverlogboeken, sessiecookies die noodzakelijk zijn voor het goede functioneren van de site). Er worden geen persoonsgegevens verzameld voor commerciële of reclamedoeleinden.</p>
+
             <h3>Rechten van de gebruiker</h3>
-            <p>In overeenstemming met de geldende wetgeving heeft u recht op toegang, rectificatie en verwijdering van uw gegevens. U kunt dit recht uitoefenen door contact met ons op te nemen via <span class="text-placeholder">[E-mailadres voor contact]</span>.</p>
+            <p>In overeenstemming met de geldende wetgeving heeft u recht op toegang, rectificatie en verwijdering van uw gegevens. U kunt dit recht uitoefenen door contact met ons op te nemen via <strong><a data-sensitive-email="owner-email"></a></strong>.</p>
         `
     }
+};
+
+/**
+ * Phone numbers stored as fragments to prevent bot scraping.
+ * Each entry is an array of string parts that are assembled at runtime.
+ */
+export const phoneData = {
+    fr: [
+        ['+3', '2', ' (0) ', '47', '2 8', '9 0', '0 7', '6'],
+        ['+3', '2', ' (0) ', '47', '3 7', '4 6', '8 7', '8']
+    ],
+    nl: [
+        ['+3', '2', ' (0) ', '47', '6 3', '3 6', '5 8', '2']
+    ]
+};
+
+/**
+ * Sensitive business data stored as fragments to prevent bot scraping.
+ * Values are assembled at runtime by the renderSensitiveData() method in app.js.
+ * No complete string should ever appear in the source.
+ */
+export const sensitiveData = {
+    'owner-name':      ['Paul', 'ette ', 'Del', 'est', 'rain'],
+    'owner-address':   ['Bas ', 'Ham', 'eau ', '(VEL', ') 25', ', 77', '60 C', 'elle', 's (l', 'ez-T', 'ourn', 'ai),', ' Bel', 'giqu', 'e'],
+    'owner-tva':       ['BE ', '08', '88.', '13', '1.5', '05'],
+    'owner-phone-legal': ['+3', '2 (', '0) ', '472', ' 89', ' 00', ' 76'],
+    'owner-email':     ['eta', 'ng-', 'sai', 'nt-', 'mar', 'tin', '-ve', 'lai', 'nes', '-77', '60@', 'out', 'loo', 'k.b', 'e'],
 };
 
 export default translations;

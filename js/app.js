@@ -1,4 +1,4 @@
-import translations from './translations.js';
+import translations, { phoneData, sensitiveData } from './translations.js';
 
 class EtangApp {
     constructor() {
@@ -54,6 +54,86 @@ class EtangApp {
             const key = el.getAttribute('data-i18n-alt');
             if (currentTranslations[key]) {
                 el.setAttribute('alt', currentTranslations[key]);
+            }
+        });
+
+        // Render obfuscated phone numbers assembled from fragments
+        this.renderPhones(lang);
+
+        // Render obfuscated sensitive data assembled from fragments
+        this.renderSensitiveData();
+    }
+
+    /**
+     * Assembles phone number fragments at runtime and injects them as clickable
+     * list items. Numbers are never stored as complete strings to prevent scraping.
+     */
+    renderPhones(lang) {
+        const container = document.querySelector('[data-phones]');
+        if (!container) return;
+
+        const phones = phoneData[lang] ?? [];
+
+        // Clear previous entries
+        container.innerHTML = '';
+
+        phones.forEach(fragments => {
+            // Assemble display text and tel: href from fragments
+            const displayNumber = fragments.join('');
+            const telNumber = displayNumber.replace(/[\s()]/g, '');
+
+            const li = document.createElement('li');
+            li.className = 'footer__list-item';
+
+            const icon = document.createElement('span');
+            icon.className = 'material-symbols-outlined';
+            icon.textContent = 'call';
+
+            const link = document.createElement('a');
+            link.href = `tel:${telNumber}`;
+            link.textContent = displayNumber;
+
+            li.appendChild(icon);
+            li.appendChild(link);
+            container.appendChild(li);
+        });
+    }
+
+    /**
+     * Assembles sensitive data fragments at runtime and injects them into the DOM.
+     * Handles plain text spans, email anchors (mailto:), and phone anchors (tel:).
+     * Sensitive data is never stored as a complete string in the source.
+     */
+    renderSensitiveData() {
+        // Plain text: <span data-sensitive="key">...
+        document.querySelectorAll('[data-sensitive]').forEach(el => {
+            const key = el.getAttribute('data-sensitive');
+            const fragments = sensitiveData[key];
+            if (fragments) {
+                el.textContent = fragments.join('');
+            }
+        });
+
+        // Email links: <a data-sensitive-email="key">...
+        document.querySelectorAll('[data-sensitive-email]').forEach(el => {
+            const key = el.getAttribute('data-sensitive-email');
+            const fragments = sensitiveData[key];
+            if (fragments) {
+                const assembled = fragments.join('');
+                el.textContent = assembled;
+                el.href = `mailto:${assembled}`;
+            }
+        });
+
+        // Phone links: <a data-sensitive-tel="key">...
+        document.querySelectorAll('[data-sensitive-tel]').forEach(el => {
+            const key = el.getAttribute('data-sensitive-tel');
+            const fragments = sensitiveData[key];
+            if (fragments) {
+                const displayNumber = fragments.join('');
+                const telNumber = displayNumber.replace(/[\s()]/g, '');
+                el.textContent = displayNumber;
+                el.href = `tel:${telNumber}`;
             }
         });
     }
