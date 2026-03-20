@@ -22,7 +22,8 @@ async function build() {
             'favicon-32x32.png',
             'favicon.ico',
             'site.webmanifest',
-            'CNAME'
+            'CNAME',
+            'sitemap.xml'
         ];
 
         for (const item of itemsToCopy) {
