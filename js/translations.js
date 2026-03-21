@@ -124,7 +124,7 @@ const translations = {
 export const phoneData = {
     fr: [
         ['+3', '2', ' (0) ', '47', '2 8', '9 0', '0 7', '6'],
-        ['+3', '2', ' (0) ', '47', '3 7', '4 6', '8 7', '8']
+        ['+3', '2', ' (0) ', '47', '3 7', '4 6', '8 7', '6']
     ],
     nl: [
         ['+3', '2', ' (0) ', '47', '6 3', '3 6', '5 8', '2']
@@ -137,11 +137,11 @@ export const phoneData = {
  * No complete string should ever appear in the source.
  */
 export const sensitiveData = {
-    'owner-name':      ['Paul', 'ette ', 'Del', 'est', 'rain'],
-    'owner-address':   ['Bas ', 'Ham', 'eau ', '(VEL', ') 25', ', 77', '60 C', 'elle', 's (l', 'ez-T', 'ourn', 'ai),', ' Bel', 'giqu', 'e'],
-    'owner-tva':       ['BE ', '08', '88.', '13', '1.5', '05'],
+    'owner-name': ['Paul', 'ette ', 'Del', 'est', 'rain'],
+    'owner-address': ['Bas ', 'Ham', 'eau ', '(VEL', ') 25', ', 77', '60 C', 'elle', 's (l', 'ez-T', 'ourn', 'ai),', ' Bel', 'giqu', 'e'],
+    'owner-tva': ['BE ', '08', '88.', '13', '1.5', '05'],
     'owner-phone-legal': ['+3', '2 (', '0) ', '472', ' 89', ' 00', ' 76'],
-    'owner-email':     ['eta', 'ng-', 'sai', 'nt-', 'mar', 'tin', '-ve', 'lai', 'nes', '-77', '60@', 'out', 'loo', 'k.b', 'e'],
+    'owner-email': ['eta', 'ng-', 'sai', 'nt-', 'mar', 'tin', '-ve', 'lai', 'nes', '-77', '60@', 'out', 'loo', 'k.b', 'e'],
 };
 
 export default translations;
