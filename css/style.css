@@ -1,10 +1,10 @@
 /* === Variables & Reset === */
 :root {
     /* Colors */
-    --color-primary: #579876;
-    --color-primary-hover: #4e8c6c;
-    --color-primary-light: rgba(87, 152, 118, 0.1);
-    --color-primary-light-alt: rgba(87, 152, 118, 0.05);
+    --color-primary: #447a5e; /* Better contrast for accessibility */
+    --color-primary-hover: #3a6850;
+    --color-primary-light: rgba(68, 122, 94, 0.1);
+    --color-primary-light-alt: rgba(68, 122, 94, 0.05);
 
     --color-accent: #D4A373;
     --color-accent-hover: #c9935d;
@@ -101,6 +101,21 @@ img {
 
 .text-center {
     text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: white;
+    padding: 1rem;
+    z-index: 9999;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* === Header === */
@@ -598,7 +613,7 @@ img {
 .footer__title {
     font-size: 1.125rem;
     font-weight: 700;
-    color: var(--color-primary);
+    color: #e3b688; /* Brightened accent color for >4.51 foreground contrast */
     margin-bottom: 1.5rem;
 }
 
@@ -666,7 +681,7 @@ img {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.7); /* Improved contrast to pass accessibility */
     font-size: 0.875rem;
 }
 

@@ -57,6 +57,15 @@ class EtangApp {
             }
         });
 
+        // Translate aria-labels
+        const labelElementsToTranslate = document.querySelectorAll('[data-i18n-label]');
+        labelElementsToTranslate.forEach(el => {
+            const key = el.getAttribute('data-i18n-label');
+            if (currentTranslations[key]) {
+                el.setAttribute('aria-label', currentTranslations[key]);
+            }
+        });
+
         // Render obfuscated phone numbers assembled from fragments
         this.renderPhones(lang);
 
@@ -87,6 +96,7 @@ class EtangApp {
 
             const icon = document.createElement('span');
             icon.className = 'material-symbols-outlined';
+            icon.setAttribute('aria-hidden', 'true');
             icon.textContent = 'call';
 
             const link = document.createElement('a');
@@ -166,7 +176,15 @@ class EtangApp {
         const nav = document.querySelector('.header__nav');
 
         menuBtn.addEventListener('click', () => {
-            nav.classList.toggle('is-open');
+            const isOpen = nav.classList.toggle('is-open');
+            menuBtn.setAttribute('aria-expanded', isOpen);
+
+            // Update aria-label based on state
+            const labelKey = isOpen ? 'menu-close-label' : 'menu-open-label';
+            const translation = translations[this.currentLang][labelKey];
+            if (translation) {
+                menuBtn.setAttribute('aria-label', translation);
+            }
         });
     }
 
