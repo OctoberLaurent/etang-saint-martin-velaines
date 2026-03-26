@@ -56,7 +56,18 @@
     </script>
 
     <!-- Preload LCP Image -->
-    <link rel="preload" as="image" href="pictures/hero.webp" fetchpriority="high" />
+    <link rel="preload" as="image" href="pictures/hero-mobile.webp" media="(max-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="pictures/hero.webp" media="(min-width: 769px)" fetchpriority="high" />
+    <style>
+        #home .hero__bg {
+            background-image: linear-gradient(rgba(22, 28, 25, 0.5), rgba(22, 28, 25, 0.7)), url('pictures/hero-mobile.webp');
+        }
+        @media (min-width: 769px) {
+            #home .hero__bg {
+                background-image: linear-gradient(rgba(22, 28, 25, 0.5), rgba(22, 28, 25, 0.7)), url('pictures/hero.webp');
+            }
+        }
+    </style>
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -116,8 +127,7 @@
     <main id="main-content">
         <!-- Hero Section -->
         <section id="home" class="hero">
-            <div class="hero__bg parallax"
-                style="background-image: linear-gradient(rgba(22, 28, 25, 0.5), rgba(22, 28, 25, 0.7)), url('pictures/hero.webp');">
+            <div class="hero__bg parallax">
             </div>
 
             <div class="hero__content animate-fade-in">
