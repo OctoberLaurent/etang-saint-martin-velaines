@@ -1,7 +1,8 @@
 /* === Variables & Reset === */
 :root {
     /* Colors */
-    --color-primary: #447a5e; /* Better contrast for accessibility */
+    --color-primary: #447a5e;
+    /* Better contrast for accessibility */
     --color-primary-hover: #3a6850;
     --color-primary-light: rgba(68, 122, 94, 0.1);
     --color-primary-light-alt: rgba(68, 122, 94, 0.05);
@@ -276,9 +277,22 @@ img {
     position: absolute;
     inset: 0;
     z-index: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero__bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(rgba(22, 28, 25, 0.5), rgba(22, 28, 25, 0.7));
+}
+
+.hero__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .hero__content {
@@ -613,7 +627,8 @@ img {
 .footer__title {
     font-size: 1.125rem;
     font-weight: 700;
-    color: #e3b688; /* Brightened accent color for >4.51 foreground contrast */
+    color: #e3b688;
+    /* Brightened accent color for >4.51 foreground contrast */
     margin-bottom: 1.5rem;
 }
 
@@ -681,7 +696,8 @@ img {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
-    color: rgba(255, 255, 255, 0.7); /* Improved contrast to pass accessibility */
+    color: rgba(255, 255, 255, 0.7);
+    /* Improved contrast to pass accessibility */
     font-size: 0.875rem;
 }
 
@@ -784,10 +800,6 @@ img {
         box-shadow: var(--shadow-xl);
     }
 
-    .hero__bg {
-        /* Fixes iOS Safari bug where 'background-attachment: fixed' breaks the image */
-        background-attachment: scroll;
-    }
 }
 
 /* === Modals === */
@@ -842,12 +854,10 @@ img {
     position: relative;
     flex-shrink: 0;
     padding: 2rem 2.5rem 1.75rem;
-    background: linear-gradient(
-        135deg,
-        var(--color-footer) 0%,
-        #3a6e55 60%,
-        var(--color-primary) 100%
-    );
+    background: linear-gradient(135deg,
+            var(--color-footer) 0%,
+            #3a6e55 60%,
+            var(--color-primary) 100%);
     /* Subtle grain texture via pseudo‑element */
     overflow: hidden;
 }
@@ -883,13 +893,11 @@ img {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        var(--color-accent) 30%,
-        var(--color-accent-hover) 70%,
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            var(--color-accent) 30%,
+            var(--color-accent-hover) 70%,
+            transparent);
 }
 
 .modal__title {

@@ -9,11 +9,12 @@ async function build() {
         await fs.emptyDir('dist');
 
         console.log('📁 Copie des fichiers statiques (images, html, etc.)...');
-        
+
         // Liste des fichiers et dossiers à copier tels quels
         const itemsToCopy = [
             'index.html',
             'pictures',
+            'fonts',
             'favicon_io',
             'android-chrome-192x192.png',
             'android-chrome-512x512.png',
