@@ -5,3 +5,4 @@ eslint.config.js
 favicon_io.zip
 *.log
 dist/
+/.idea/php.xml
