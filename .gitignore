@@ -6,3 +6,6 @@ favicon_io.zip
 *.log
 dist/
 /.idea/php.xml
+/lighthouse-report.report.html
+/lighthouse-report.report.json
+/lighthouse-report.json

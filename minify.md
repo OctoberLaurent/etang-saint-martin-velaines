@@ -8,7 +8,7 @@ This system takes care of **compressing the CSS and JavaScript code** without yo
 
 You continue working **exactly as before** on the files in the `css/` and `js/` folders.
 
-When the "build" script is run, a `dist/` (for *Distribution*) folder is generated. This folder contains **the final, optimized version** of your site:
+When the "build" script is run, a `dist/` (for _Distribution_) folder is generated. This folder contains **the final, optimized version** of your site:
 
 1. **Images and fonts** are copied as they are.
 2. The **`index.html`** file is copied as it is.
@@ -29,8 +29,8 @@ If you wish to test the minified version on your machine (optional, as it is aut
    npm run build
    ```
 3. This will create (or update) a `dist/` folder at the root of your project.
-4. You can then open the `dist/index.html` file or share the `dist/` folder via Ngrok/Live Server. 
-   *(Note: The `dist/` folder is not synced to GitHub to avoid unnecessarily duplicating the code files.)*
+4. You can then open the `dist/index.html` file or share the `dist/` folder via Ngrok/Live Server.
+   _(Note: The `dist/` folder is not synced to GitHub to avoid unnecessarily duplicating the code files.)_
 
 ---
 
@@ -42,17 +42,20 @@ A workflow file (`.github/workflows/deploy.yml`) has been added.
 It tells GitHub to do the minification work by itself.
 
 **Every time you do a `git push`** (send updates to GitHub):
+
 1. GitHub's servers retrieve your clean, readable code.
 2. They run the `npm run build` command in the background.
 3. They deploy the contents of the `dist/` folder to the public part of **GitHub Pages**.
 
-**Simply put, you have absolutely nothing to do.** 
+**Simply put, you have absolutely nothing to do.**
+
 - Your source files remain easily readable on your PC.
 - Your visitors browse an ultra-fast and compressed version.
 
 ---
 
 ## 📦 Tools used
+
 - **Terser**: The industry standard for JavaScript minification.
 - **Clean-CSS**: A very fast minifier for CSS.
 - **fs-extra**: A JavaScript utility to easily copy entire folders (like images).

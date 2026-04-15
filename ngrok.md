@@ -10,7 +10,7 @@ To share your project securely, you need to tell ngrok which local port to liste
 ngrok http 5500
 ```
 
-*Replace `5500` with the port number used by your project.*
+_Replace `5500` with the port number used by your project._
 
 ## 2. Find the Public URL
 
@@ -21,6 +21,7 @@ Once the command is running, ngrok displays a control interface directly in your
 - Copy this link to share it with others or to test it on your other devices (like your smartphone).
 
 ### Tip: Find the URL via the Local API
+
 If ngrok is running in the background or you want to retrieve the URL programmatically, ngrok exposes a small local administration API on port `4040`. You can query this API from another terminal using the following command:
 
 ```bash

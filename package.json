@@ -2,19 +2,25 @@
   "name": "etang-st-martin",
   "version": "1.0.0",
   "description": "",
-  "main": "eslint.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build": "node build.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:js": "eslint js/",
+    "lint:css": "stylelint css/",
+    "lint": "npm run lint:js && npm run lint:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "@eslint/js": "^9.24.0",
     "clean-css": "^5.3.3",
     "eslint": "^10.0.3",
     "fs-extra": "^11.3.4",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
     "sharp": "^0.34.5",
     "stylelint": "^17.4.0",
     "stylelint-config-standard": "^40.0.0",
